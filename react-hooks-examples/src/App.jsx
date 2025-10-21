@@ -1,4 +1,6 @@
 import Count from './components/Count';
+import StudentSearchApp from './components/Debounce_Memorization';
+import TodoListReactMemo from './components/ReactMemo';
 import ToDoList from './components/ToDoList';
 import TwoCOunter from './components/TwoCounter';
 function App() {
@@ -10,6 +12,10 @@ function App() {
       <TwoCOunter/>
       <h1>Day 2 - ToDo List</h1>
       <ToDoList/>
+      <h1>-----------------------</h1>
+      <TodoListReactMemo/>
+      <h1>Debounce_Memorization</h1>
+      <StudentSearchApp/>
     </div>
   );
 }
