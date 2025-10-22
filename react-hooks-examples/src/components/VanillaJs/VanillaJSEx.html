@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vanilla JS COunter</title>
+    </head>
+    <body>
+        <h1 id="count">0</h1>
+        <button id="increment">+</button>
+        <button id="decrement">-</button>
+        <script>
+            //step 1: select the elements from the DOM
+            const countDisplay=document.getElementById("count");
+            const incrementBtn=document.getElementById("increment");
+            const decrementBtn=document.getElementById("decrement");
+            //step 2: set initial state
+            let count = 0;
+            //step 3: add event listeners
+            incrementBtn.addEventListener('click',()=>{
+                count++
+                countDisplay.textContent=count;//manually updating the DOM
+            })
+            decrementBtn.addEventListener('click',()=>{
+                count--;
+                countDisplay.textContent=count;//manually updating the DOM
+            })
+        </script>
+    </body>
+</html>
+<!-- 
+⚙️ What’s happening:
+
+You’re manually selecting elements (getElementById).
+
+You manually modify the DOM (textContent).
+
+The browser updates the UI each time you make changes.
+
+✅ Pros:
+
+Very light.
+
+Great for small apps or quick prototypes.
+
+❌ Cons:
+
+You handle DOM updates manually.
+
+Becomes messy for bigger apps (hard to maintain state & structure). 
+-->
