@@ -1,5 +1,6 @@
 import './App.css'
 import Counter from './components/Counter';
+import ParentProps from './components/props/ParentProps';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
     <div className='min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-purple-500 to-indigo-600 text-white'>
       <h1 className='text-3xl font-bold mb-6'>Tailwind Counter</h1>
       <Counter/>
+      <h1>Parent Child Props concept</h1>
+      <ParentProps/>
     </div>
   );
 }
