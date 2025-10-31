@@ -3,6 +3,7 @@ import StudentSearchApp from './components/Debounce_Memorization';
 import TodoListReactMemo from './components/ReactMemo';
 import ToDoList from './components/ToDoList';
 import TwoCOunter from './components/TwoCounter';
+import PersistantCounter from './components/useffectCode/PersistanceCounter';
 import ReactVersion from './components/VanillaJs/ReactVersion';
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <StudentSearchApp/>
       <h1>The DOM</h1>
       <ReactVersion/>
+      <h1>UseEffect Counter</h1>
+      <PersistantCounter/>
     </div>
   );
 }
