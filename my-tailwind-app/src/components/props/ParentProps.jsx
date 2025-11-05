@@ -7,7 +7,7 @@ export default function ParentProps(){
         setCount(count+1)
     }
     return (
-        <div className='flex flex-col items-center justify-center min-h-screen'>
+        <div className='flex flex-col items-center justify-center'>
             <ChildProps name="Srilekha"/>
             <h2>Counter : {count}</h2>
             <ChildCounter onIncrement={handleIncrement}/>
