@@ -40,8 +40,8 @@ function StudentSearchApp() {
         return students.filter((s) => (s.name.toLowerCase().includes(query.toLowerCase())))
     }, [query])
     return(
-        <div style={{textAlign:"center"}}>
-            <h1>🎓 Student Search</h1>
+        <div >
+            <h2>🎓 Student Search</h2>
             <input type="text" placeholder="Type Name..." value={search} onChange={handleSearchChange}/>
             <StudentList students={filterStudents}/>
         </div>

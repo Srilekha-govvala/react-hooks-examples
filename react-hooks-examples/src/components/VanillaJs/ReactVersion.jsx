@@ -5,9 +5,9 @@ function Counter(){
     //step2: JSX describes the UI(HTML-like)
     return(
         <>
-        <div style={{textAlign:"center"}}>
-            <h1>Counter:{count}</h1>
-            <button onClick={()=>{setCount(count+1)}}>+</button>
+        <div >
+            <h3>Counter : {count}</h3>
+            <button onClick={()=>{setCount(count+1)}}>+</button>&nbsp;
             <button onClick={()=>{setCount(count-1)}}>-</button>
         </div>
         </>

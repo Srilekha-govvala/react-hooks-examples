@@ -5,11 +5,11 @@ function TwoCOunter() {
     return (
         <div style={{justifyContent:"center", alignItems:"center"}}>
             <p>Increase counter: {count1}</p>
-            <button onClick={() => setCount1(count1 + 1)}>+</button>
-            <button onClick={() => setCount1(0)}>Reset</button>
+            <button onClick={() => setCount1(count1 + 1)}>+</button>&nbsp;
+            <button onClick={() => setCount1(0)}>Reset</button>&nbsp;
             <p>Decrease counter: {count2}</p>
-            <button onClick={() => setCount2(count2 - 1)}>-</button>
-            <button onClick={() => setCount2(15)}>Reset</button>
+            <button onClick={() => setCount2(count2 - 1)}>-</button>&nbsp;
+            <button onClick={() => setCount2(15)}>Reset</button>&nbsp;
         </div>
     )
 }
