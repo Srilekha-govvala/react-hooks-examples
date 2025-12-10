@@ -5,13 +5,19 @@ import PersistanceCounter from './components/useffectCode/PersistanceCounter';
 import Accordion from './Accordion';
 import CardGrid from './CardGrid';
 import PostList from './components/fetchingposts/PostList';
-import { useState } from 'react';
+import ToggleButton from './components/ToggleButton';
+import ModeLocalStorageHook from './components/customHooks/ModeLocalStorageHook';
+import SearchBos from './components/SearchBos';
+import { Component, useState } from 'react';
 
 const items = [
   { id: 'counter', title: 'Counter', Component: Counter },
   { id: 'props', title: 'Parent -> Child Props', Component: ParentProps },
   { id: 'useeffect', title: 'UseEffect Persistence Counter', Component: PersistanceCounter },
-  { id: 'fetch', title: 'Fetching data using fetch', Component: PostList }
+  { id: 'fetch', title: 'Fetching data using fetch', Component: PostList },
+  { id: 'toggleButton', title: "Toggle button utilizing Custom Hook", Component: ToggleButton },
+  { id: 'localStorage', title: "Switch Theme using Local Storage Custom Hook", Component: ModeLocalStorageHook },
+  { id: 'searchbox', title: "Viisual example of debouncing concept", Component: SearchBos }
 ]
 
 function App() {
