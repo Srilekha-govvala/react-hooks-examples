@@ -12,7 +12,7 @@ export default function ThrottleUse(){
     },[handleScroll])
     return (
         <div style={{height:"200vh", padding:"20px"}}>
-            Scroll down to see throttled logs
+            Scroll down to see throttled logs in console panel.
         </div>
     )
 }
