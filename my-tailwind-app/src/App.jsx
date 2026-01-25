@@ -10,6 +10,7 @@ import ModeLocalStorageHook from './components/customHooks/ModeLocalStorageHook'
 import SearchBos from './components/SearchBos';
 import UseActionStateHook from './components/react@19Hooks/UseActionStateHook';
 import { Component, useState } from 'react';
+import MainRedux from './components/redux-tool-kit/mainRedux';
 
 const items = [
   { id: 'counter', title: 'Counter', Component: Counter },
@@ -19,7 +20,8 @@ const items = [
   { id: 'toggleButton', title: "Toggle button utilizing Custom Hook", Component: ToggleButton },
   { id: 'localStorage', title: "Switch Theme using Local Storage Custom Hook", Component: ModeLocalStorageHook },
   { id: 'searchbox', title: "Viisual example of debouncing concept", Component: SearchBos },
-  { id: 'actionStatehook', title: "useActionState Hook", Component: UseActionStateHook }
+  { id: 'actionStatehook', title: "useActionState Hook", Component: UseActionStateHook },
+  {id:'Redux', title:"Redux Tool Kit", Component:MainRedux}
 ]
 
 function App() {
